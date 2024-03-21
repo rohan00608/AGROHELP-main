@@ -1,14 +1,10 @@
-# Paddy Plant Prognosis
+# AGROHELP
 
-Paddy Plant Prognosis won **Best Data Science Hack** at **[Hackrithmitic 2](https://hackrithmitic-2.devpost.com/project-gallery)**
 
-[Demo Link](https://www.paddyplantprognosis.tech/)
-
-[Youtube Link](https://www.youtube.com/watch?v=M_xLQeglzgU)
 
 [Kaggle Dataset used for Model](https://www.kaggle.com/competitions/paddy-disease-classification)
 
-[Link to ML Model](https://github.com/IdkwhatImD0ing/PaddyPlantPrognosis/blob/main/modelv2.ipynb)
+[Link to ML Model](https://github.com/rohan00608/AGROHELP-main/blob/master/modelv2.ipynb)
 
 
 **Contributors:** [@IdkwhatImD0ing](https://github.com/IdkwhatImD0ing) [@simon-quach](https://github.com/simon-quach) [@triquenguyen](https://github.com/triquenguyen)
