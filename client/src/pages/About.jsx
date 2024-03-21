@@ -10,17 +10,19 @@ const About = () => {
     {
       name: 'ROHAN TIWARI',
       linkedin: '',
-      github: '',
-      info: '',
-      gmail: '',
+      github: 'https://github.com/rohan00608/AGROHELP-main',
+      info: 'B.Sc in INFORMATION TECHNOLOGY at MUMBAI UNIVERSITY',
+      gmail: 'rohantiwari2303298@gmail.com',
+      photo: rohan,
       
     },
     {
       name: 'VINAYAK MISHRA',
       linkedin: '',
       github: '',
-      info: '',
-      gmail: '',
+      info: 'B.Sc in INFORMATION TECHNOLOGY at MUMBAI UNIVERSITY',
+      gmail: 'vinayakmishra2417076@gmail.com',
+      photo: vinayak,
       
     },
    
