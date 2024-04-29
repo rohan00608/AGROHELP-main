@@ -1,0 +1,78 @@
+
+Data WareHouse SQLScript.sql
+
+
+OSPF MD5 SYSLOG OSPF
+First ospf perform in all
+then rip in all
+router ospf 1
+area 0 authentication message-digest
+int s0/0/0
+ip ospf message-digest-key 1 md5 abc
+exit
+show ip ospf interface
+
+router en
+conf t
+ntp server 192.168.1.5
+ntp update-calendar
+ntp authenticate
+ntp trusted-key 1
+ntp authentication-key 1 md5 abc
+service timestamps log datetime msec
+logging host 192.168.1.6
+exit 
+show clock
+
+ntp serveron on 
+syslog verify
+
+
+AAA authentication
+
+hostname R1
+user admin secret abc 
+aaa new-model
+aaa authentication  login default local 
+line console 0
+login authentication default
+exit till username
+
+
+ssh login
+ip domain-name sic.com
+crypto key gen rsa
+aaa authentication login SSH-LOGIN local 
+line vty 0 4
+login authentication SSH-LOGIN
+transport input ssh
+exit 
+
+pc-> ssh -l  admin 192.168.1.1 
+secret abc
+
+permit ftp on pc 1 and www in pc2
+host r1
+access-list 100 permit tcp 172.22.34.64 0.0.0.31 host 172.22.34.62 eq ftp
+access-list 100 permit icmp 172.22.34.64 0.0.0.31 host 172.22.34.62
+int g0/0
+ip access-group 100 in
+exit
+int g0/1
+ip access-group HTTP_ACL in
+ip  access-list extended HTTP_ACL
+permit tcp 172.22.34.96 0.0.0.15 host 172.22.34.62 eq www
+permit icmp 172.22.34.96 0.0.0.15 host 172.22.34.62
+exit
+int g0/1
+ip access-group HTTP_ACL in
+exit
+ 
+
+
+
+
+
+
+
+ 
