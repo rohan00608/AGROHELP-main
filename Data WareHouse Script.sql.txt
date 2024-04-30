@@ -27,6 +27,17 @@ show clock
 ntp serveron on 
 syslog verify
 
+hostname R1
+ip domain-name sic.com
+user admin 15 privilege secret abc
+line vty 0 4
+local login 
+transport input ssh
+crypto key gen rsa
+exit
+
+pc-> ssh -l admin 192.168.1.1
+
 
 AAA authentication
 
