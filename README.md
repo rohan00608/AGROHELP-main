@@ -7,7 +7,8 @@
 [Link to ML Model](https://github.com/rohan00608/AGROHELP-main/blob/master/modelv2.ipynb)
 
 
-**Contributors:** [https://github.com/rohan00608/AGROHELP-main)
+**Contributors:** [https://github.com/rohan00608] [https://github.com/Vickyy2417076] 
+
 ## Inspiration: 
 Rice is a staple food for a large portion of the world's population, particularly in Asia where it is the primary source of nourishment for millions of people. As such, the cultivation of rice is of paramount importance for food security and economic stability in many countries. However, paddy cultivation, the raw grain before removal of husk, is a challenging task that requires consistent supervision due to the susceptibility of rice plants to various diseases and pests. These diseases can manifest in various ways, such as discoloration, wilting, and stunted growth, and can lead to significant yield loss if not identified and treated in a timely manner. The need for efficient and accurate disease identification in paddy cultivation inspired us to develop AGROHELP, an app that uses computer vision technology to automate this process and helps farmers to protect their crops and avoid potential loss.
 
